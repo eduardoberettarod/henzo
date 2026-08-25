@@ -96,6 +96,8 @@ export default function Lorenna() {
         />
       )}
 
+      <div className="background-glow"></div>
+
       <Canvas
         camera={{ position: [0, 0, 5], fov: 45 }}
         style={{

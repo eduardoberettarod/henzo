@@ -1,11 +1,9 @@
-import { useRef } from 'react'
-import { useFrame } from '@react-three/fiber'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, OrbitControls } from '@react-three/drei'
 import * as THREE from 'three'
 
 export default function Model3D() {
-  const modelRef = useRef()
   const modelPath = `${import.meta.env.BASE_URL}pumping_heart_model.glb`
+
   const { scene } = useGLTF(modelPath)
 
   scene.traverse((object) => {
@@ -18,18 +16,28 @@ export default function Model3D() {
     }
   })
 
-  useFrame(() => {
-    if (modelRef.current) {
-      modelRef.current.rotation.y += 0.01
-    }
-  })
-
   return (
-    <primitive
-      ref={modelRef}
-      object={scene}
-      position={[0, 0.8, 0]}
-      scale={0.01}
-    />
+    <>
+      <primitive
+        object={scene}
+        position={[0, 0.8, 0]}
+        scale={0.01}
+      />
+
+      <OrbitControls
+        enableZoom={false}
+        enablePan={false}
+        enableRotate={true}
+
+        minPolarAngle={Math.PI / 2}
+        maxPolarAngle={Math.PI / 2}
+
+        autoRotate
+        autoRotateSpeed={8}
+
+        enableDamping
+        dampingFactor={0.05}
+      />
+    </>
   )
 }
