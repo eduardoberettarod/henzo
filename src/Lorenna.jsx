@@ -80,7 +80,7 @@ export default function Lorenna() {
       Mal posso esperar, meu gatinho! 
         `
 
-    const whatsappUrl = `https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/${import.meta.env.NUMBER}?text=${encodeURIComponent(message)}`
 
     window.open(whatsappUrl, '_blank')
   }
