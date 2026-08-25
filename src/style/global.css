@@ -30,6 +30,7 @@ section {
 
 #lorenna {
   position: relative;
+  min-height: 100vh;
   background-color: var(--black);
   color: white;
   justify-content: center;
@@ -38,11 +39,8 @@ section {
 }
 
 #lorenna canvas {
-  position: absolute !important;
-  inset: 0;
-  width: 100% !important;
-  height: 100% !important;
-  z-index: 0;
+  width: 100vw !important;
+  height: 100vh !important;
 }
 
 #lorenna > .card-glass {
