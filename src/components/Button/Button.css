@@ -1,0 +1,22 @@
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.button-group > .button {
+  flex: 1;
+}
+
+.button {
+  border: 1px solid #f3e6e6;
+  color: white;
+  background-color: var(--red);
+  padding: 14px;
+  width: 100%;
+  border-radius: 26px;
+  font-weight: 500;
+}
+
+.button:active {
+  background-color: #cc0a0a91;
+}

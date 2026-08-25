@@ -1,0 +1,21 @@
+.loader-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  background-color: var(--black) ;
+}
+
+.welcome-text {
+  position: absolute;
+  color: var(--red);
+  font-size: 4.5rem;
+  font-weight: 700;
+  font-family: 'Vogue';
+  white-space: nowrap;
+  opacity: 0;
+}

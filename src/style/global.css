@@ -1,0 +1,56 @@
+:root {
+  --black: #0d0d0d;
+  --red: #CC0A0A
+}
+
+#home {
+  background-color: var(--black);
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Vogue;
+  src: url(/font/Vogue.ttf) format("opentype");
+}
+
+#lorenna {
+  position: relative;
+  background-color: var(--black);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#lorenna canvas {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0;
+}
+
+#lorenna > .card-glass {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: 'Vogue';
+  font-size: 2rem ;
+}
