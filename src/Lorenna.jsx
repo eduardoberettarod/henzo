@@ -6,6 +6,8 @@ import { Canvas } from '@react-three/fiber'
 
 import Model3D from './components/Model3D'
 
+import FloatingHearts from './components/FloatingHearts/FloatingHearts'
+
 import Loader from './components/Loader/Loader'
 
 import Card from './components/Card/Card'
@@ -97,7 +99,7 @@ export default function Lorenna() {
       )}
 
       <div className="background-glow"></div>
-
+      <FloatingHearts />
       <Canvas
         camera={{ position: [0, 0, 5], fov: 45 }}
         style={{
