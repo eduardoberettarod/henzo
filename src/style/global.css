@@ -28,7 +28,7 @@ section {
   src: url(/font/Vogue.ttf) format("opentype");
 }
 
-#lorenna {
+#gabriele {
   position: relative;
   min-height: 100vh;
   background-color: var(--black);
@@ -38,12 +38,12 @@ section {
   display: flex;
 }
 
-#lorenna canvas {
+#gabriele canvas {
   width: 100vw !important;
   height: 100vh !important;
 }
 
-#lorenna>.card-glass {
+#gabriele>.card-glass {
   position: relative;
   z-index: 1;
 }

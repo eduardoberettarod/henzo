@@ -14,7 +14,7 @@ import Card from './components/Card/Card'
 
 import Button from './components/Button/Button'
 
-export default function Lorenna() {
+export default function Gabriele() {
   const [loader, setLoader] = useState(true)
 
   const [activity, setActivity] = useState('')
@@ -71,30 +71,29 @@ export default function Lorenna() {
   }
 
   function handleFinish() {
-    const message = `
-      Oii! Eu aceitei sair com você! 
+    const message = `Oii! Eu aceitei sair com você! 
 
       Data: ${formatDate(date)}
       Horário: ${time}
       Comida: ${selectedFood?.label}
       Atividade: ${selectedActivity?.label}
 
-      Mal posso esperar, meu gatinho! 
-        `
+      Mal posso esperar! `
 
-    const whatsappUrl = `https://wa.me/${import.meta.env.NUMBER}?text=${encodeURIComponent(message)}`
+    const whatsappUrl =
+      `https://wa.me/${import.meta.env.VITE_NUMBER}?text=${encodeURIComponent(message)}`
 
-    window.open(whatsappUrl, '_blank')
+    window.location.href = whatsappUrl
   }
 
   return (
-    <section id="lorenna">
+    <section id="gabriele">
 
       {loader && (
         <Loader
           setLoader={setLoader}
           first="Welcome"
-          second="Lorenna"
+          second="Gabriele"
         />
       )}
 

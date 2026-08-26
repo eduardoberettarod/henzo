@@ -2,20 +2,20 @@ import { useState } from 'react'
 import Loader from './components/Loader/Loader'
 import './style/global.css'
 import InputHome from './components/InputHome/InputHome';
-import Lorenna from './Lorenna'
+import Gabriele from './Gabriele'
 
 export function App() {
   const [loader, setLoader] = useState(true)
-  const [showLorenna, setShowLorenna] = useState(false)
+  const [showGabriele, setShowGabriele] = useState(false)
 
   function handlePasswordChange(value) {
-    if (value === '10032023') {
-      setShowLorenna(true)
+    if (value === '7121895125') {
+      setShowGabriele(true)
     }
   }
 
-  if (showLorenna) {
-    return <Lorenna />
+  if (showGabriele) {
+    return <Gabriele />
   }
 
   return (
