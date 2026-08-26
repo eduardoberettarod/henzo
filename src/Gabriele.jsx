@@ -157,12 +157,12 @@ export default function Gabriele() {
           <>
             <div className="text-center mb-4">
               <span className="title">
-                Que bom que você aceitou!
+                Que bom que apertou sim!
               </span>
             </div>
 
             <p>
-              tava com medo de você falar nãoKKKKKKKK
+              Fico muito feliz que tenha aceitado.
             </p>
 
             <Button onClick={nextCard}>

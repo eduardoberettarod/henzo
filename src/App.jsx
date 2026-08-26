@@ -23,7 +23,7 @@ export function App() {
       <section id="home">
         {loader && <Loader setLoader={setLoader}
           first={'Friends?'}
-          second={'Lovers.'} /
+          second={'Lovers?'} /
         >}
 
         <div>
